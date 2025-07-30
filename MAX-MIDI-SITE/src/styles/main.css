@@ -1,0 +1,98 @@
+:root {
+  --black: #000000;
+  --plum: #291528;
+  --charcoal: #3A3E3B;
+  --white: #F0EFF4;
+  --mauve: #9E829C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+nav {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  color: var(--mauve);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.hero {
+  background: url('../assets/hero.jpg') no-repeat center;
+  background-size: cover;
+  padding: 8em 2em;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: var(--plum);
+}
+
+.hero p {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: var(--white);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 0.75em 2em;
+  background-color: var(--plum);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.features {
+  background-color: var(--charcoal);
+  padding: 4em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+.card {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 2em;
+  border-radius: 8px;
+  width: 300px;
+  border: 1px solid var(--mauve);
+}
+
+footer {
+  background-color: var(--black);
+  color: var(--mauve);
+  text-align: center;
+  padding: 2em;
+}
